@@ -9,12 +9,13 @@
             "type": "godot",
             "request": "launch",
             "project": "${workspaceFolder}",
-            "scene": "main",    // main|current|pinned|<path>
+            "scene": "main", // main|current|pinned|<path>
             "editor_path": "C:\\Dev\\godot\\bin\\godot.windows.editor.x86_64.exe",
+            "internalConsoleOptions": "openOnSessionStart",
             "debug_collisions": false,
             "debug_paths": false,
             "debug_navigation": false,
-            "additional_options": ""
+            "additional_options": "",
         }
     ]
 }
