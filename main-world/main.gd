@@ -13,3 +13,5 @@ func _unhandled_input(event: InputEvent) -> void:
 			DisplayServer.window_set_position(size / 4, prime_screen)
 		else:
 			DisplayServer.window_set_mode(DisplayServer.WindowMode.WINDOW_MODE_EXCLUSIVE_FULLSCREEN, prime_screen)
+	elif event.is_action_pressed("restart"):
+		get_tree().reload_current_scene()

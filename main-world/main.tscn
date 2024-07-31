@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cod40ouvoccae"]
+[gd_scene load_steps=9 format=3 uid="uid://cod40ouvoccae"]
 
 [ext_resource type="Script" path="res://main-world/main.gd" id="1_0ocni"]
 [ext_resource type="PackedScene" uid="uid://q5qfwar4blv6" path="res://platforms/platform_long.tscn" id="1_38xnk"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d3dxb0awdkltb" path="res://pottit/pottit_player.tscn" id="3_75uns"]
 [ext_resource type="Environment" uid="uid://cdvs1ydsl4xp5" path="res://main-world/main-world-environment.tres" id="5_2hkbb"]
 [ext_resource type="Script" path="res://main-world/pivot_camera.gd" id="6_pw62n"]
+[ext_resource type="PackedScene" uid="uid://tjpvj3hudcf0" path="res://enemy/enemy.tscn" id="7_cuyo2"]
 
 [sub_resource type="FogMaterial" id="FogMaterial_32law"]
 
@@ -46,6 +47,21 @@ material = SubResource("FogMaterial_32law")
 
 [node name="Platform_Long" parent="Platforms" instance=ExtResource("1_38xnk")]
 
+[node name="Platform_Long7" parent="Platforms" instance=ExtResource("1_38xnk")]
+transform = Transform3D(2.26033, 1.305, 0, -1.305, 2.26033, 0, 0, 0, 2.61001, 40.465, -0.565433, 0)
+
+[node name="Platform_Long8" parent="Platforms" instance=ExtResource("1_38xnk")]
+transform = Transform3D(1.30501, 2.26033, 0, -2.26033, 1.30501, 0, 0, 0, 2.61001, 43.6279, -3.68265, 0)
+
+[node name="Platform_Long11" parent="Platforms" instance=ExtResource("1_38xnk")]
+transform = Transform3D(1.30501, 2.26033, 0, -2.26033, 1.30501, 0, 0, 0, 2.61001, 45.703, -7.2767, 0)
+
+[node name="Platform_Long9" parent="Platforms" instance=ExtResource("1_38xnk")]
+transform = Transform3D(2.52108, -0.675521, 0, 0.675521, 2.52108, 0, 0, 0, 2.61001, 49.0667, -6.76623, 0)
+
+[node name="Platform_Long10" parent="Platforms" instance=ExtResource("1_38xnk")]
+transform = Transform3D(2.52108, -0.675521, 0, 0.675521, 2.52108, 0, 0, 0, 2.61001, 44.3057, -8.04193, 0)
+
 [node name="Platform_Long5" parent="Platforms" instance=ExtResource("1_38xnk")]
 transform = Transform3D(2.60285, 0, 0, 0, 2.60285, 0, 0, 0, 2.60285, 5.02531, -1.29451, 0)
 
@@ -56,16 +72,37 @@ transform = Transform3D(2.61001, 0, 0, 0, 2.61001, 0, 0, 0, 2.61001, 8.85719, -1
 transform = Transform3D(2.61001, 0, 0, 0, 2.61001, 0, 0, 0, 2.61001, -4.38964, -1.29451, 0)
 
 [node name="Platform_Long2" parent="Platforms" instance=ExtResource("1_38xnk")]
-transform = Transform3D(2.58785, 0.339365, 0, -0.339365, 2.58785, 0, 0, 0, 2.61001, -9.2504, -1.09647, 0)
+transform = Transform3D(2.42546, 0.963975, -0.00598196, -0.963928, 2.42506, -0.0456159, -0.0112896, 0.0445997, 2.6096, -8.283, -0.434, 0)
 
 [node name="Platform_Long3" parent="Platforms" instance=ExtResource("1_38xnk")]
-transform = Transform3D(1.97576, 1.70543, 0, -1.70543, 1.97576, 0, 0, 0, 2.61001, -11.3669, -0.302419, 0)
+transform = Transform3D(1.97576, 1.70517, -0.0300615, -1.70543, 1.97545, -0.0348266, 0, 0.0460063, 2.6096, -10.6186, 0.564516, 0)
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("1_raa54")]
 transform = Transform3D(2.54035, -0.598969, 0, 0.598969, 2.54035, 0, 0, 0, 2.61001, 10.037, -0.96311, 0)
 
 [node name="Platform" parent="Platforms" instance=ExtResource("1_raa54")]
 transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 11.455, 0.599451, 0)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 16.04, 2.8398, 0)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 22.2866, 1.24842, 0)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.51423, -0.700567, 0, 0.700567, 2.51423, 0, 0, 0, 2.61001, 28.0925, 1.03219, 0)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 31.1931, 2.34399, 0)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 35.2009, 2.83735, 0)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 53.2211, -4.9586, 0)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("1_raa54")]
+transform = Transform3D(2.60988, -0.025965, 0, 0.025965, 2.60988, 0, 0, 0, 2.61001, 55.8953, -3.84646, 0)
 
 [node name="Background" type="Node" parent="."]
 
@@ -78,3 +115,9 @@ script = ExtResource("6_pw62n")
 [node name="Camera3D" type="Camera3D" parent="PivotCamera"]
 transform = Transform3D(1, 0, 0, 0, 0.970173, 0.242413, 0, -0.242413, 0.970173, 0, 2.9068, 8.04492)
 current = true
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("7_cuyo2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.44347, 0)
+
+[node name="CharacterBody3D2" parent="." instance=ExtResource("7_cuyo2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.904626, 8.71471, 0)
